@@ -5,17 +5,16 @@ JS library mongodbHelpers
 ## Location
 
 ### Source code
-https://github.com/tactik8/observationHelpers
+https://github.com/tactik8/mongodbHelpers
 
 ### repl.it
-https://replit.com/@tactik8/observationHelpers
-
+https://replit.com/@tactik8/mongodbHelpers
 
 ## Install
 
 ### From github
 ```
-git clone https://github.com/tactik8/observationHelpers ./helpers
+git clone https://github.com/tactik8/mongodbHelpers ./helpers
 ```
 
 ## Test and publish
