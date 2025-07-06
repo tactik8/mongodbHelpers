@@ -14,7 +14,7 @@ https://replit.com/@tactik8/mongodbHelpers
 
 ### From github
 ```
-git clone https://github.com/tactik8/mongodbHelpers ./helpers
+git clone https://github.com/tactik8/mongodbHelpers ./utils/mongodbHelpers
 ```
 
 ## Test and publish
@@ -39,8 +39,32 @@ npm publish
 
 ## How to use
 
+
+### make available to import  
+#### add in package.json 
+``` 
+imports: {
+    "#mongodbHelpers": "./utils/mongodbHelpers/mongodbHelpers/mongodbHelpers.js",
+}
 ```
-import { mongodbHelpers as m } from './helpers/mongodbHelpers/mongodbHelpers.js'
+
+#### or in html file
+```
+<script type="importmap">
+    {
+      "imports": {
+        "#dataHelpers": "/utils/mongodbHelpers/mongodbHelpers/mongodbHelpers.js"
+      }
+    }
+  </script>
+
+
+```
+
+### in code
+
+```
+import { mongodbHelpers as m } from '#mongodbHelpers'
 
 let db = new m.DB()
 
